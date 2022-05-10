@@ -44,6 +44,7 @@
 .hero-section {
   
   padding-top: 200px;
+   padding-bottom: 280px;
 
   background-color: var(--secondary-bgc);
 
@@ -81,8 +82,8 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
   width: 1200px;
 }
 
@@ -90,8 +91,9 @@
 
 .primary.btn {
   display: inline-block;
-  margin-bottom: 200px;
-  padding: 10px 32px;
+ 
+  padding-top: 10px 32px;
+
   border-radius: 4px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   min-width: 200px;
@@ -103,7 +105,7 @@
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 88;
+  line-height: 1.88;
   letter-spacing: 0.06em;
 }
 
@@ -112,17 +114,20 @@
   padding: 6px 22px;
   border-radius: 4px;
   border: 1px solid transparent;
-  margin-left: 8px;
-  margin-right: 8px;
+ margin-right: 0;
+margin-bottom: 50px;
 
   background-color: #f5f4fa;
   color: var(--primary-text-color);
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 62;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.filters.list li.item:nth-child(-n+4)  {
+   margin-right: 8px;
 }
 
 .btn:hover,
@@ -163,9 +168,9 @@
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+  text-transform: capitalize;
 
   color: var(--primary-text-color);
 }
@@ -247,25 +252,34 @@ border-radius: 0px 0px 4px 4px;
 
   color: var(--secondary-text-color);
 }
-
+.team-member {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 /*  Our works Portfolio */
 
 .filters {
   margin-top: 94px;
-  padding-bottom: 34px;
+  
   display: flex;
   justify-content: center;
 }
-
+.element-discription {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+padding-left: 24px;
+}
 .work-list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 94px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .work-list .work-title {
-padding-right: 24px;
-padding-left: 24px;
+
 margin-bottom: 4px;
 
 font-weight: 700;
@@ -278,14 +292,11 @@ color: var(--primary-text-color);
 }
 
 .work-list .type-work {
-  padding-right: 24px;
-padding-left: 24px;
-
   font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
-line-height: 1,88;
+line-height: 1.88;
 
 letter-spacing: 0.03em;
 
